@@ -27,7 +27,7 @@ function ShoppingCard() {
             basket.reduce((acc, item) => {
                 return acc + (item.amount * (products.find(product => product.id === item.id).price))
             }, 0))
-    }, [basket]);
+    }, [basket,products]);
     return (
         <div>
             <Navbar price={total} />

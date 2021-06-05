@@ -3,6 +3,7 @@ import { NavbarDiv, NavbarLogo, NavbarList, NavbarUl, NavbarLi } from '../styles
 import { Route, Link, Switch } from 'react-router-dom';
 import Product from './Product';
 import Basket from './Basket';
+import ShoppingCard from './ShoppingCard';
 
 function Navbar(props) {
     return (
@@ -24,7 +25,8 @@ function Navbar(props) {
                 <Switch>
                     <Route path="/basket" component={Basket} />
                     {/* <Route path="/favori" exact component={Favori} /> */}
-                    <Route path="/" exact component={Product} />
+                    <Route path="/products" component={Product} />
+                    {/* <Route path="/" exact component={ShoppingCard} /> */}
                 </Switch>
         </>
     )
