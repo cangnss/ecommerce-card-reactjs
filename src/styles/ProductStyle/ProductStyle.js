@@ -1,30 +1,37 @@
 import styled from "styled-components";
 
 export const ProductMainDiv = styled.div`
-    width:300px;
-    margin-right: 20px;
+    width:350px;
+    height:700px;
+    margin-right: 5px;
+    margin-bottom: 20px;
+    margin-left: 50px;
 `;
 
 export const ProductDiv = styled.div`
-    width: 300px;
-    height: auto;
+    display: flex;
+    flex-direction: column;  
     border-radius: 15px;
     border: 1px solid black;
     margin-left: 20px;
     margin-top: 100px;
-    margin-right: 10px;
     text-align: center;
     padding-bottom: 5px;
 `;
 
 export const ProductImgDiv = styled.div`
-    width: auto;
-    height: auto;
     img{
+        width: 200px;
+        height: 200px;
         border-radius: 15px;
+        margin-bottom: 20px;
+
     }
 `;
 
+export const ProductNameDiv = styled.div`
+    width: auto;
+`;
 export const ProductName = styled.h4`
     font-weight: bold;
 `;
@@ -40,15 +47,16 @@ export const ProductPrice = styled.p`
 `;
 
 export const ProductDescription = styled.p`
-    font-size: 14px;
+    width: auto;
+    font-size: 18px;
     font-weight: normal;
 `;
 
 export const ProductOperations = styled.div`
-    width: auto;
-    height:auto;
     background-color: white;
     display: flex;
+    margin-left: 30px;
+    margin-bottom: 10px;
 `;
 
 
@@ -78,3 +86,8 @@ export const Quantity = styled.span`
     margin-right: 10px;
     margin-top: 10px;
 `;
+
+export const Favorite = styled.div`
+    
+`;
+

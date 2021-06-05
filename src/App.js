@@ -1,12 +1,11 @@
-import './App.css';
-import Navbar from './components/Navbar/Navbar';
-import DataFetching from './components/Product/DataFetching';
+import React from 'react'
+import ShoppingCard from './components/ShoppingCard';
+
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <DataFetching />
+      <ShoppingCard />
     </div>
   );
 }
