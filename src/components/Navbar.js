@@ -26,7 +26,6 @@ function Navbar(props) {
                     <Route path="/basket" component={Basket} />
                     {/* <Route path="/favori" exact component={Favori} /> */}
                     <Route path="/products" component={Product} />
-                    {/* <Route path="/" exact component={ShoppingCard} /> */}
                 </Switch>
         </>
     )
