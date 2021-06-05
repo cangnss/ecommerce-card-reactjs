@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import Navbar from './Navbar';
 import axios from 'axios'
 import Product from './Product'
-
+import Basket from './Basket';
 
 
 function ShoppingCard() {
@@ -31,6 +31,10 @@ function ShoppingCard() {
     return (
         <div>
             <Navbar price={total} />
+            <div className="ms-5 mt-3">
+                <span className="display-4 fw-bold">Basket:</span>
+                <Basket products={products} basket={basket} />
+            </div>
             <div className="d-flex flex-wrap">
                 {products.map(product => (
                     <Product product={product} key={product.id} basket={basket} setBasket={setBasket} />

@@ -3,7 +3,6 @@ import { ProductMainDiv, ProductDiv, ProductImgDiv,ProductNameDiv, ProductName, 
 
 function Product({product,basket,setBasket}) {
     
-    const [count, setCount] = useState(0);
     // const [favori, setFavori] = useState([]);
     const basketItem = basket.find(item => item.id === product.id)
 
@@ -32,13 +31,9 @@ function Product({product,basket,setBasket}) {
         
     }
 
-    // useEffect(() => {
-        
-    // }, [basket])
-
-    // const changeColor = (e) => {
-    //     e.target.style.color = 'orange';
-    // }
+    const changeColor = (e) => {
+        e.target.style.color = 'orange';
+    }
     return (
         //Burada styled-components ile css verdim ve datafetching den dönen verileri burada listelettim.
         <ProductMainDiv>
@@ -67,11 +62,10 @@ function Product({product,basket,setBasket}) {
                     <IncreaseButton onClick={increase}>
                         <i class="fas fa-plus fa-2x"></i>
                     </IncreaseButton>
-                    {/* <Favorite>
+                    <Favorite>
                         <i class="fas fa-star fa-2x" onClick={changeColor}></i>
-                    </Favorite> */}
+                    </Favorite>
                  </ProductOperations> 
-               
             </ProductDiv>
         </ProductMainDiv>
         
