@@ -4,7 +4,7 @@ import { ProductMainDiv, ProductDiv, ProductImgDiv,ProductNameDiv, ProductName, 
 function Product({product,basket,setBasket}) {
     
     // const [favori, setFavori] = useState([]);
-    const basketItem = basket.find(item => item.id === product.id)
+    const basketItem = basket.find(item => item.id === product.id) || 0;
 
     const decrease = () => {
         const checkBasket = basket.find(item => item.id === product.id);
