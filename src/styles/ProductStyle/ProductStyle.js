@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const ProductMainDiv = styled.div`
     width:350px;
-    height:700px;
     margin-right: 5px;
     margin-bottom: 20px;
     margin-left: 50px;
